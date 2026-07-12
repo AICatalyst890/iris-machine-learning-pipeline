@@ -8,8 +8,11 @@ This project demonstrates core data science competencies: splitting datasets, tr
 
 ```text
 Iris flower/
+├── .gitignore
+├── Iris.csv           # Input dataset for the ML pipeline
 ├── README.md          # Project documentation
-└── iris.ipynb        # Main Jupyter Notebook containing the ML pipeline
+├── iris.ipynb         # Main Jupyter Notebook containing the ML pipeline
+└── requirements.txt   # Project dependencies
 
 ```
 
