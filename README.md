@@ -65,7 +65,13 @@ Analyzing the confusion matrices reveals exactly how each algorithm handles deci
 
 * **Logistic Regression Matrix:**
 
-$$\begin{bmatrix} 29 & 0 & 0 \\ 0 & 23 & 0 \\ 0 & 0 & 23 \end{bmatrix}$$
+$$
+\begin{bmatrix}
+29 & 0 & 0 \\
+0 & 23 & 0 \\
+0 & 0 & 23 
+\end{bmatrix}
+$$
 
 
 * *Insight:* Achieved a flawless diagonal. The linear decision boundaries perfectly separated all 3 classes on the test set.
@@ -73,7 +79,13 @@ $$\begin{bmatrix} 29 & 0 & 0 \\ 0 & 23 & 0 \\ 0 & 0 & 23 \end{bmatrix}$$
 
 * **Gaussian Naive Bayes Matrix:**
 
-$$\begin{bmatrix} 29 & 0 & 0 \\ 0 & 23 & 0 \\ 0 & 1 & 22 \end{bmatrix}$$
+$$
+\begin{bmatrix}
+29 & 0 & 0 \\
+0 & 23 & 0 \\
+0 & 1 & 22 
+\end{bmatrix}
+$$
 
 
 * *Insight:* Highly robust, misclassifying only a single sample. It incorrectly predicted 1 *Virginica* (Class 2) as *Versicolor* (Class 1).
@@ -81,7 +93,13 @@ $$\begin{bmatrix} 29 & 0 & 0 \\ 0 & 23 & 0 \\ 0 & 1 & 22 \end{bmatrix}$$
 
 * **K-Nearest Neighbors ($k=5$) Matrix:**
 
-$$\begin{bmatrix} 29 & 0 & 0 \\ 0 & 23 & 0 \\ 0 & 4 & 19 \end{bmatrix}$$
+$$
+\begin{bmatrix}
+29 & 0 & 0 \\
+0 & 23 & 0 \\ 
+0 & 4 & 19 
+\end{bmatrix}
+$$
 
 
 * *Insight:* Encountered more friction near the decision margins, misclassifying 4 *Virginica* (Class 2) samples as *Versicolor* (Class 1) due to neighborhood overlaps.
